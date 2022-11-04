@@ -12,8 +12,10 @@ public class MoveLeft : MonoBehaviour
     }
 
     // Update is called once per frame
+
     void Update()
     {
+        //Translate/Moves the object to the left 
         transform.Translate(Vector3.left * Time.deltaTime * speed);
     }
 }
