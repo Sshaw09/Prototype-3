@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10;
     public float gravityModifier;
     //Double Jump Variable
-    public bool isOnGround = true;
+    public bool isOnGround = false;
+    //gameover variable
+    public bool gameOver = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +35,15 @@ public class PlayerController : MonoBehaviour
     //Method to make the IsonGround true after the player collides with the ground
     private void OnCollisionEnter(Collision collision)
     {
-        isOnGround = true;
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isOnGround = true;
+        }
+        else if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Debug.Log("Game Over");
+            gameOver = true;
+        }
 
     }
 }
