@@ -1,18 +1,15 @@
 ﻿<Properties StartupConfiguration="{0B6F6AEB-BCD1-670A-ECC0-082DD49C6566}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Course Library/_Source_Files/_LICENSE.txt">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="49" Column="42" />
-      <File FileName="Assets/Scripts/MoveLeft.cs" Line="14" Column="9" />
-      <File FileName="Assets/Scripts/SpawnManager.cs" Line="22" Column="59" />
-      <File FileName="Assets/Scripts/RepeatBackground.cs" Line="23" Column="38" />
+      <File FileName="Assets/Course Library/_Source_Files/_LICENSE.txt" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Prototype-3" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="PlayerController.cs" selected="True" />
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="Course Library" expanded="True">
+                <Node name="_Source_Files" expanded="True" />
               </Node>
             </Node>
           </Node>
