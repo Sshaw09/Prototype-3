@@ -19,12 +19,14 @@ public class MoveLeft : MonoBehaviour
 
     void Update()
     {
+        //Makes it so that when the game is over,everything stops moving
         if(playerControllerScript.gameOver == false)
         {
             //Translate/Moves the object to the left 
             transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
-        
+
+        //Out of bounds; Makes it so that when the Obstacle goes past the bounds it gets destroyed
         if(transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);

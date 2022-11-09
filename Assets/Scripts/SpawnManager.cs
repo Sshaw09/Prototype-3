@@ -19,6 +19,7 @@ public class SpawnManager : MonoBehaviour
         //Spawns in the Obstacle every 2 seconds
         InvokeRepeating("SpawnObstacle", startDelay, repeatRate);
 
+        //makes a reference to the playercontroller script
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
