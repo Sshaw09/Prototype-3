@@ -14,6 +14,15 @@ public class PlayerController : MonoBehaviour
     public bool gameOver = false;
     //Variable for animation
     private Animator playerAnim;
+    //Makes a variable to call smoke particle affect
+    public ParticleSystem explosionParticle;
+    //Makes a variable to call a dirt particle affect
+    public ParticleSystem dirtParticle;
+    //Sound Variables
+    public AudioClip jumpSound;
+    public AudioClip crashSound;
+    private AudioSource playerAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +32,8 @@ public class PlayerController : MonoBehaviour
         Physics.gravity *= gravityModifier;
         //Uses the variable to call the animator component into the script
         playerAnim = GetComponent<Animator>();
+        //Uses the variable to call the audiosource component into the script
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -34,6 +45,9 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
             playerAnim.SetTrigger("Jump_trig");
+            dirtParticle.Stop();
+            //Plays an audio for the jump
+            playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
     }
 
@@ -44,6 +58,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
+            dirtParticle.Play();
         }
 
         //Makes it so that when you hit an obstacle, the game is over
@@ -54,6 +69,11 @@ public class PlayerController : MonoBehaviour
             //Death animation
             playerAnim.SetBool("Death_b", true);
             playerAnim.SetInteger("DeathType_int", 1);
+            //Makes a smoke affect when collision happens
+            explosionParticle.Play();
+            dirtParticle.Stop();
+            //Plays an audio for the crash
+            playerAudio.PlayOneShot(crashSound, 1.0f);
         }
 
     }
