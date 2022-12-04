@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{0B6F6AEB-BCD1-670A-ECC0-082DD49C6566}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Challenge 3/Scripts/PlayerControllerX.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Course Library/Scripts/PlayerController.cs">
     <Files>
       <File FileName="Assets/Challenge 3/Scripts/PlayerControllerX.cs" Line="40" Column="10" />
       <File FileName="Assets/Course Library/Scripts/PlayerController.cs" Line="45" Column="72" />
-      <File FileName="Assets/Challenge 3/Scripts/MoveLeftX.cs" Line="22" Column="10" />
-      <File FileName="Assets/Course Library/Scripts/MoveLeft.cs" Line="5" Column="38" />
-      <File FileName="Assets/Challenge 3/Scripts/SpawnManagerX.cs" Line="25" Column="32" />
-      <File FileName="Assets/Course Library/Scripts/SpawnManager.cs" Line="20" Column="36" />
+      <File FileName="Assets/Challenge 3/Scripts/MoveLeftX.cs" />
+      <File FileName="Assets/Course Library/Scripts/MoveLeft.cs" />
+      <File FileName="Assets/Challenge 3/Scripts/SpawnManagerX.cs" />
+      <File FileName="Assets/Course Library/Scripts/SpawnManager.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,7 +30,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="22a101d0-095d-4ef0-9088-b8b706b748cb" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3fe8d75c-edde-4694-bf3b-010324289b32" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
